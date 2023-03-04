@@ -33,13 +33,13 @@ echo "Checout " $UITESTBranch
 git branch --all
 git checkout $UITESTBranch
 
-echo "Copy UITest files " $UITestDirectory " into the build directory " $BUILDDIR
-cp -r $UITestDirectory $BUILDDIR
+#echo "Copy UITest files " $UITestDirectory " into the build directory " $BUILDDIR
+#cp -r $UITestDirectory $BUILDDIR
 
 echo "AppCenter Login"
 appcenter login --token $AppCenterTokenForTest
 
 echo "appcenter test run uitest"
-appcenter test run uitest --app-path $APPPATH --app $APP --devices $DEVICESET --test-series $TESTSERIES --locale en_US -p $TestParamater --build-dir $UITestProject --uitest-tools-dir $UITestDirectory --debug --quiet --token $AppCenterTokenForTest
+appcenter test run uitest --app-path $APPPATH --app $APP --devices $DEVICESET --test-series $TESTSERIES --locale en_US -p $TestParamater --build-dir $UITestDirectory --uitest-tools-dir $UITestDirectory --debug --quiet --token $AppCenterTokenForTest
 
 echo "RunOnRealDevice Complete"
