@@ -29,7 +29,7 @@ echo "ls directory"
 pwd
 ls
 
-echo "Checout " ${UITESTBranch
+echo "Checout " $UITESTBranch
 git branch --all
 git checkout $UITESTBranch
 
