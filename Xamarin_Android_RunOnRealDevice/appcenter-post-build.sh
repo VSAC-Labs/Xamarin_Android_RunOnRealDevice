@@ -25,9 +25,9 @@ pwd
 echo "clone " $GITCLONEURLUITEST
 git clone $GITCLONEURLUITEST
 
-echo "ls directory"
+echo "ls " $UITestDirectory
 pwd
-ls
+ls $UITestDirectory
 
 echo "Checout " $UITESTBranch
 git branch --all
