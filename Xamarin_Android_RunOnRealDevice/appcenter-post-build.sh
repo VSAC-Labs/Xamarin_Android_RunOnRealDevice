@@ -17,7 +17,7 @@ echo "App Center App Name " $APP
 echo "TestParamater " $TestParamater
 echo "GITCLONEURLUITEST " $GITCLONEURLUITEST
 echo "UITestDirectory " $UITestDirectory
-echo "UITESTBranch " $UITESTBranch
+#echo "UITESTBranch " $UITESTBranch
 
 echo "CURRENT FOLDER"
 pwd
@@ -28,8 +28,8 @@ git clone $GITCLONEURLUITEST
 echo "List Git Branches " 
 git branch --all
 
-echo "Try Checkout " $UITESTBranch
-git checkout $UITESTBranch
+#echo "Try Checkout " $UITESTBranch
+#git checkout $UITESTBranch
 
 echo "ls " $UITestDirectory
 pwd
