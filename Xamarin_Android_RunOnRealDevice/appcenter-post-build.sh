@@ -25,16 +25,13 @@ pwd
 echo "clone " $GITCLONEURLUITEST
 git clone $GITCLONEURLUITEST
 
-echo "ls " $UITestDirectory
-pwd
-ls $UITestDirectory
-
 echo "Checout " $UITESTBranch
 git branch --all
 git checkout $UITESTBranch
 
-#echo "Copy UITest files " $UITestDirectory " into the build directory " $BUILDDIR
-#cp -r $UITestDirectory $BUILDDIR
+echo "ls " $UITestDirectory
+pwd
+ls $UITestDirectory
 
 echo "AppCenter Login"
 appcenter login --token $AppCenterTokenForTest
