@@ -10,6 +10,7 @@ using Google.Android.Material.Snackbar;
 
 namespace Xamarin_Android_RunOnRealDevice
 {
+    //4.1.3
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
