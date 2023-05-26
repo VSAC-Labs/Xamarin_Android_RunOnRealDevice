@@ -31,6 +31,13 @@ git branch --all
 echo "Try Checkout " $UITESTBranch
 git checkout $UITESTBranch
 
+
+echo "UITest Directory"
+directory=pwd
+file_path="$directory/$UITESTBranch"
+echo "$file_path"
+$UITestDirectory="$directory/$UITESTBranch"
+
 echo "ls " $UITestDirectory
 pwd
 ls $UITestDirectory
