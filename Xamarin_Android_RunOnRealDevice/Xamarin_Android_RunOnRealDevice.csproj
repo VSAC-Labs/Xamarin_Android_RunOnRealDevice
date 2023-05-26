@@ -61,7 +61,7 @@
     <MandroidI18n />
     <AndroidSupportedAbis />
     <AndroidCreatePackagePerAbi>true</AndroidCreatePackagePerAbi>
-	<AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="appcenter-post-build.sh" />
+    <None Include="appcenter-post-clone.sh" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
